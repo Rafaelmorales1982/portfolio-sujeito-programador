@@ -1,0 +1,96 @@
+/* ============================= */
+/* RESPONSIVIDADE - ATÉ 1050px   */
+/* ============================= */
+@media (max-width: 1050px) {
+
+    /* ========================= */
+    /* INÍCIO - SEÇÃO MAIN       */
+    /* ========================= */
+
+    /* Diminui o tamanho do título principal */
+    .main h1 {
+        font-size: 45px;
+    }
+
+    /* Diminui o tamanho do texto da página principal */
+    .main p {
+        font-size: 18px;
+    }
+
+    /* Faz a imagem de fundo ocupar toda a área disponível */
+    .main {
+        background-size: cover;
+    }
+
+    /* ========================= */
+    /* FIM - SEÇÃO MAIN          */
+    /* ========================= */
+
+
+    /* ========================= */
+    /* INÍCIO - SEÇÃO SOBRE      */
+    /* ========================= */
+
+    /* Organiza os elementos um abaixo do outro */
+    .about {
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Define largura máxima do bloco de texto */
+    .about div {
+        max-width: 80%;
+    }
+
+    /* Reduz o tamanho do título da seção Sobre */
+    .about div h2 {
+        font-size: 40px;
+    }
+
+    /* Redimensiona a imagem e adiciona espaço acima */
+    .about img {
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    /* ========================= */
+    /* FIM - SEÇÃO SOBRE         */
+    /* ========================= */
+
+
+    /* ========================= */
+    /* INÍCIO - SEÇÃO PROJETOS   */
+    /* ========================= */
+
+    /* Diminui a largura das imagens dos projetos */
+    .projects img {
+        width: 30%;
+    }
+
+    /* ========================= */
+    /* FIM - SEÇÃO PROJETOS      */
+    /* ========================= */
+
+
+    /* ========================= */
+    /* INÍCIO - RODAPÉ           */
+    /* ========================= */
+
+    /* Reduz o tamanho do título do rodapé */
+    footer h3 {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    /* Organiza os elementos do rodapé em coluna */
+    footer {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    /* ========================= */
+    /* FIM - RODAPÉ              */
+    /* ========================= */
+
+}

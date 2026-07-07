@@ -1,0 +1,267 @@
+/* Importação das fontes do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* ===========================
+   RESET GERAL
+   Remove margens, preenchimentos
+   e define box-sizing
+=========================== */
+* {
+  margin: 0; /* Remove margem padrão */
+  padding: 0; /* Remove espaçamento interno */
+  outline: 0; /* Remove contorno dos elementos */
+  box-sizing: border-box; /* Inclui padding e borda no tamanho */
+}
+
+/* Configuração padrão da página */
+body {
+  font-family: "Roboto", sans-serif; /* Define a fonte principal */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* ===========================
+          HEADER
+=========================== */
+
+/* Barra de navegação */
+.nav {
+  background-color: #181818; /* Cor de fundo */
+  height: 80px; /* Altura */
+  width: 100%; /* Largura total */
+
+  display: flex; /* Flexbox */
+  justify-content: flex-end; /* Menu alinhado à direita */
+
+  position: sticky; /* Fica fixa ao rolar a página */
+  top: 0;
+  z-index: 9; /* Mantém acima dos demais elementos */
+}
+
+/* Lista do menu */
+.nav-list {
+  display: flex; /* Itens lado a lado */
+  align-items: center; /* Centraliza verticalmente */
+  list-style: none; /* Remove marcadores */
+  margin-right: 30px; /* Espaço da direita */
+}
+
+/* Links do menu */
+.nav-list a {
+  text-decoration: none; /* Remove sublinhado */
+  color: #7e7c7c; /* Cor do texto */
+  padding: 20px; /* Área clicável maior */
+}
+
+/* Efeito ao passar o mouse */
+.nav-list a:hover {
+  color: #ffffff; /* Muda para branco */
+}
+
+/* ===========================
+            MAIN
+=========================== */
+
+/* Seção principal */
+.main {
+  width: 100%; /* Largura total */
+  background-color: black; /* Cor de fundo */
+
+  height: calc(100vh - 80px); /* Altura da tela menos o header */
+
+  background-image: url(../img/programador.png); /* Imagem de fundo */
+  background-repeat: no-repeat; /* Não repete a imagem */
+  background-position: center; /* Centraliza */
+  background-size: cover; /* Ocupa toda a área */
+
+  display: flex; /* Flexbox */
+  align-items: center; /* Centraliza verticalmente */
+  padding-left: 10%; /* Espaço à esquerda */
+}
+
+/* Título principal */
+.main h1 {
+  color: #ffffff; /* Branco */
+  font-size: 54px; /* Tamanho da fonte */
+}
+
+/* Subtítulo */
+.main p {
+  font-size: 24px; /* Tamanho */
+  font-style: italic; /* Itálico */
+  color: #1e96fc; /* Azul */
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+/* Botão */
+.botao {
+  cursor: pointer; /* Cursor de mão */
+  background-color: #ffffff; /* Fundo branco */
+  border: 0; /* Remove borda */
+  padding: 14px; /* Espaçamento interno */
+  border-radius: 4px; /* Bordas arredondadas */
+  font-size: 18px;
+  font-weight: bold;
+
+  transition: 0.9s; /* Animação suave */
+}
+
+/* Efeito do botão */
+.botao:hover {
+  background-color: #1e96fc; /* Fundo azul */
+  transform: scale(1.1); /* Aumenta o tamanho */
+}
+
+/* Link do botão */
+.main a {
+  text-decoration: none; /* Remove sublinhado */
+  color: #181818; /* Cor escura */
+}
+
+/* ===========================
+            ABOUT
+=========================== */
+
+/* Seção Sobre */
+.about {
+  background-color: #ffffff; /* Fundo branco */
+  width: 100%; /* Largura total */
+
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  display: flex; /* Flexbox */
+  align-items: center; /* Alinha verticalmente */
+  justify-content: space-between; /* Espaço entre imagem e texto */
+}
+
+/* Área de texto */
+.about div {
+  max-width: 50%; /* Ocupa metade da largura */
+  padding-right: 40px; /* Espaço à direita */
+}
+
+/* Imagem da seção */
+.about img {
+  max-width: 450px; /* Largura máxima */
+  border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Título */
+.about div h2 {
+  font-size: 32px;
+  margin-bottom: 14px;
+}
+
+/* Subtítulo */
+.about div h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+/* ===========================
+          FIM DO CSS
+=========================== */
+/* ==========================
+   INÍCIO DA SEÇÃO PROJECTS
+========================== */
+
+/* Configura a seção de projetos */
+.projects {
+  width: 100%;                 /* Ocupa toda a largura da página */
+  display: flex;               /* Utiliza Flexbox */
+  flex-direction: column;      /* Organiza os elementos em coluna */
+  align-items: center;         /* Centraliza os itens horizontalmente */
+  justify-content: center;     /* Centraliza os itens verticalmente */
+  padding-top: 80px 0;         /* Espaçamento superior (há um erro aqui, veja observação abaixo) */
+}
+
+/* Estilo do título da seção */
+.projects h2 {
+  font-size: 32px;             /* Define o tamanho da fonte */
+  margin-bottom: 8px;          /* Espaço abaixo do título */
+  margin-top: 20px;            /* Espaço acima do título */
+}
+
+/* Estilo do parágrafo da seção */
+.projects p {
+  margin-bottom: 40px;         /* Espaço abaixo do parágrafo */
+  font-style: italic;          /* Texto em itálico */
+}
+
+/* Container que organiza a lista de projetos */
+.project-list {
+  width: 100%;                 /* Ocupa toda a largura disponível */
+  margin-bottom: 8px;          /* Espaço abaixo da lista */
+  display: flex;               /* Utiliza Flexbox */
+  justify-content: center;     /* Centraliza os itens horizontalmente */
+  align-items: center;         /* Alinha os itens verticalmente */
+}
+
+/* Estilo das imagens dos projetos */
+.projects img {
+  width: 22%;                  /* Cada imagem ocupa 22% da largura */
+  margin-left: 0.5%;           /* Espaço à esquerda */
+  margin-right: 0.5%;          /* Espaço à direita */
+  opacity: 0.8;                /* Deixa a imagem levemente transparente */
+  transition: 0.7s;            /* Suaviza as mudanças de estilo */
+}
+
+/* Efeito ao passar o mouse sobre a imagem */
+.projects img:hover {
+  opacity: 1;                  /* Torna a imagem totalmente visível */
+}
+
+/* Estilo do botão */
+.action {
+  background-color: #181818;   /* Cor de fundo escura */
+  border: 0;                   /* Remove a borda */
+  color: #ffffff;              /* Cor do texto branca */
+  padding: 12px 28px;          /* Espaçamento interno */
+  border-radius: 4px;          /* Arredonda os cantos */
+  font-size: 18px;             /* Tamanho da fonte */
+  margin-top: 18px;            /* Espaço acima do botão */
+  cursor: pointer;             /* Muda o cursor para mãozinha */
+  margin-bottom: 20px;         /* Espaço abaixo do botão */
+}
+
+/* ==========================
+   FIM DA SEÇÃO PROJECTS
+========================== */
+
+
+/* ==========================
+      INÍCIO DO RODAPÉ
+========================== */
+
+/* Estilo principal do rodapé */
+footer {
+  width: 100%;                 /* Ocupa toda a largura da página */
+  background-color: #181818;   /* Cor de fundo escura */
+  padding: 60px 0;             /* Espaçamento superior e inferior */
+  display: flex;               /* Utiliza Flexbox */
+  align-items: center;         /* Alinha os itens verticalmente */
+  justify-content: center;     /* Centraliza os elementos */
+  color: #fff;                 /* Cor do texto branca */
+}
+
+/* Estilo dos links do rodapé */
+footer a {
+  text-decoration: none;       /* Remove o sublinhado */
+  color: #7e7c7c;              /* Cor cinza para os links */
+}
+
+/* Estilo dos parágrafos do rodapé */
+footer p {
+  margin-left: 12px;           /* Espaço à esquerda do texto */
+}
+
+/* ==========================
+       FIM DO RODAPÉ
+========================== */
